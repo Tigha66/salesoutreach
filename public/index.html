@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SalesOutreachAI - AI Sales Outreach Assistant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .glass{background:rgba(255,255,255,0.05);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.1)}
+    .gradient-text{background:linear-gradient(135deg,#ef4444,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  </style>
+</head>
+<body class="bg-[#0a0a0f] min-h-screen text-white">
+  <header class="glass sticky top-0">
+    <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center shadow-lg">
+          <i class="fas fa-paper-plane text-2xl"></i>
+        </div>
+        <div><h1 class="text-2xl font-bold gradient-text">SalesOutreachAI</h1><p class="text-xs text-slate-400">AI Sales Outreach Assistant</p></div>
+      </div>
+    </div>
+  </header>
+  <main class="max-w-7xl mx-auto px-8 py-10">
+    <div class="grid grid-cols-4 gap-6 mb-10">
+      <div class="glass rounded-2xl p-6"><p class="text-slate-400 text-sm mb-2">Emails Generated</p><p class="text-4xl font-bold">456</p></div>
+      <div class="glass rounded-2xl p-6"><p class="text-slate-400 text-sm mb-2">Open Rate</p><p class="text-4xl font-bold text-red-400">42%</p></div>
+      <div class="glass rounded-2xl p-6"><p class="text-slate-400 text-sm mb-2">Reply Rate</p><p class="text-4xl font-bold text-orange-400">18%</p></div>
+      <div class="glass rounded-2xl p-6"><p class="text-slate-400 text-sm mb-2">Meetings Booked</p><p class="text-4xl font-bold">24</p></div>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-8">
+      <div class="glass rounded-2xl p-8">
+        <h2 class="text-xl font-bold mb-6"><i class="fas fa-magic text-red-400 mr-3"></i>Generate Outreach</h2>
+        <div class="space-y-4">
+          <input placeholder="ICP description..." class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-white placeholder-slate-500">
+          <input placeholder="Product info..." class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-white placeholder-slate-500">
+          <button class="w-full py-4 bg-gradient-to-r from-red-500 to-orange-500 rounded-xl font-semibold">
+            <i class="fas fa-magic mr-2"></i>Generate Sequence
+          </button>
+        </div>
+      </div>
+      <div class="glass rounded-2xl p-8">
+        <h2 class="text-xl font-bold mb-6"><i class="fas fa-envelope text-orange-400 mr-3"></i>Generated Emails</h2>
+        <div class="space-y-3">
+          <div class="bg-white/5 rounded-xl p-4">
+            <p class="font-semibold mb-2">Subject: Quick question about your marketing</p>
+            <p class="text-slate-400 text-sm line-clamp-2">Hi Sarah, noticed your company is scaling fast...</p>
+          </div>
+          <div class="bg-white/5 rounded-xl p-4">
+            <p class="font-semibold mb-2">Subject: Following up on our chat</p>
+            <p class="text-slate-400 text-sm line-clamp-2">Hey John, wanted to share some ideas...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
